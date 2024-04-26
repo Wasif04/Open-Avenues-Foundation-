@@ -1,5 +1,8 @@
 # Project Title: Automated Section Extraction from Radiology Reports
 
+## Medium Article:
+https://medium.com/@wasifkhan5613/developing-nlp-models-for-medical-data-extraction-b2a050dfa5fb
+
 # Overview
 This project aims to enhance the processing of radiology reports by utilizing advanced Natural Language Processing (NLP) techniques to automatically segment unstructured text into its standard sections . This approach seeks to improve the efficiency of medical documentation and provide clear, structured outputs that can aid in diagnostic processes.
 

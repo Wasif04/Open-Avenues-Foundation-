@@ -1,0 +1,51 @@
+[MFLOG|0|2024-04-26T18:16:12.967667Z|runtime|4a4e2171-b7ae-4466-90a4-5601aaad5e89]<flow DataAnalysisFlow step visualize_word_vectors> failed:
+[MFLOG|0|2024-04-26T18:16:13.019874Z|runtime|6de674ce-8578-4fda-adba-db06139e31ea]    Internal error
+[MFLOG|0|2024-04-26T18:16:13.022184Z|runtime|95a825be-000f-4271-9f61-3e20598631ab]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T18:16:13.022296Z|runtime|d25e2dcb-afef-479c-8bef-190a0769ab1e]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T18:16:13.022354Z|runtime|aacb42a4-7568-42f1-b8b1-fb9ee9379aa5]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T18:16:13.022397Z|runtime|bb0aebdd-e210-4a8a-8d7a-8b99c6216ea7]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T18:16:13.022443Z|runtime|608e7dab-1a72-4a40-8205-f495da6996d4]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T18:16:13.230565Z|runtime|3b240aac-0252-4d05-94d8-4e408b995801]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.230761Z|runtime|bdad921e-d3e6-4d69-9fa4-01c3e516c143]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T18:16:13.230814Z|runtime|ab01b287-98e8-40ee-9b43-cd350d73054f]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T18:16:13.230849Z|runtime|8da03f02-1297-4943-be26-cb42f0d3a59d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.230878Z|runtime|72bd16e6-af3e-4c2f-8a17-502fd7f89233]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T18:16:13.230905Z|runtime|28f22547-8fd9-49ff-9435-5284824ff379]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T18:16:13.230940Z|runtime|3816c904-3bf8-4b4c-8bed-072d7f671427]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.230967Z|runtime|56a90483-fc51-41f2-a8c3-7f4d78c71552]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T18:16:13.230997Z|runtime|fc33f88c-abfe-4755-8005-0cb97f8d3664]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T18:16:13.231023Z|runtime|0e360d32-f8fa-41f7-bd1d-23569fd74907]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231050Z|runtime|ee8cbf44-a47b-411c-8eb4-2eb6d6693729]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T18:16:13.231076Z|runtime|2f9a43af-49d1-40c4-8fb7-f1e56321fe4a]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T18:16:13.231102Z|runtime|e0186f73-05f4-4fca-a0cc-35033074d459]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231127Z|runtime|9f3b36c0-4f58-4c9d-b8b0-6e5445882a1a]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T18:16:13.231153Z|runtime|a34186ca-8096-4b00-8073-f508c5f30654]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T18:16:13.231187Z|runtime|adceb3b3-5716-45cf-a2c8-557084fd989f]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231213Z|runtime|fd58d1cc-6d02-422d-a0cc-757678270f6d]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T18:16:13.231239Z|runtime|e8bf2ba1-d446-4954-8c33-e596d39adbce]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T18:16:13.231264Z|runtime|e632dd97-940e-4e44-93c9-0801c550cd70]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231289Z|runtime|1fb76f89-67a7-495c-baf1-1ad359b16fad]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T18:16:13.231315Z|runtime|1a1e4dd5-7de5-49b1-b446-507f5e86e01e]    task.run_step(
+[MFLOG|0|2024-04-26T18:16:13.231340Z|runtime|60e8e9ee-6966-4273-8f78-820319a7f9b3]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T18:16:13.231365Z|runtime|b182ebc2-de6f-480a-bab9-0c7de8cbb7d4]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T18:16:13.231392Z|runtime|ccd760e7-6784-4ce1-8840-dd69740e60d0]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T18:16:13.231417Z|runtime|9269811f-8617-4faa-85d7-7939b19663bc]    step_function()
+[MFLOG|0|2024-04-26T18:16:13.231446Z|runtime|e02ba704-d8f3-443c-a736-319b6094b602]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 71, in visualize_word_vectors
+[MFLOG|0|2024-04-26T18:16:13.231474Z|runtime|6291545c-ba89-4ebf-9c01-72011d91d6f3]    dp.visualize_word_vectors(self.avg_vectors)
+[MFLOG|0|2024-04-26T18:16:13.231498Z|runtime|6cf8534f-3107-470e-8a23-9b2a2b858a26]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 127, in visualize_word_vectors
+[MFLOG|0|2024-04-26T18:16:13.231524Z|runtime|ff1cc5e9-1b18-42d5-bcbf-f291926f30ab]    X_2d = TSNE(n_components=2, random_state=42).fit_transform(avg_vectors)
+[MFLOG|0|2024-04-26T18:16:13.231549Z|runtime|935a9020-c3ea-41ff-8ed6-6e9ec7f6ca24]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231579Z|runtime|65b0a02a-6a30-4750-8288-aaa7e5ed2001]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/utils/_set_output.py", line 295, in wrapped
+[MFLOG|0|2024-04-26T18:16:13.231604Z|runtime|a098260c-1c88-4dd5-83a4-464349afd152]    data_to_wrap = f(self, X, args, kwargs)
+[MFLOG|0|2024-04-26T18:16:13.231631Z|runtime|db60e25a-3ce4-4ba7-9df8-0171e41979b9]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231655Z|runtime|36809c7a-f376-4041-9e9c-81525e85ea66]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/base.py", line 1474, in wrapper
+[MFLOG|0|2024-04-26T18:16:13.231680Z|runtime|d353b1d8-96e1-48b1-a88f-d5034cbf0a95]    return fit_method(estimator, args, kwargs)
+[MFLOG|0|2024-04-26T18:16:13.231705Z|runtime|dde4a6f0-1d53-44a6-862b-9842b9e2e788]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231729Z|runtime|08a0d847-5077-4000-ab1d-992a21c80f8d]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/manifold/_t_sne.py", line 1135, in fit_transform
+[MFLOG|0|2024-04-26T18:16:13.231755Z|runtime|1ed44d2f-b4bc-4155-8516-1510b9b490e3]    self._check_params_vs_input(X)
+[MFLOG|0|2024-04-26T18:16:13.231779Z|runtime|3f8a5e84-8441-486a-a9b7-fb4353fdcc67]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/manifold/_t_sne.py", line 845, in _check_params_vs_input
+[MFLOG|0|2024-04-26T18:16:13.231804Z|runtime|dd2c36d3-9d4c-4b56-b259-663825f90a32]    if self.perplexity >= X.shape[0]:
+[MFLOG|0|2024-04-26T18:16:13.231829Z|runtime|c0e4185f-1892-4603-a18a-9c11ad361552]                          ^^^^^^^
+[MFLOG|0|2024-04-26T18:16:13.231869Z|runtime|f4262c11-7475-41d7-a2d9-ba2a980ea99a]AttributeError: 'list' object has no attribute 'shape'
+[MFLOG|0|2024-04-26T18:16:13.231894Z|runtime|07c7c724-3010-4358-a358-302bc1a28eee]
+[MFLOG|0|2024-04-26T18:16:13.232411Z|runtime|5d644422-c745-4261-ba33-152113a3a36b]Task failed.

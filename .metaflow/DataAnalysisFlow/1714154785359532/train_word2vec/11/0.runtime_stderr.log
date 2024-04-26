@@ -1,0 +1,50 @@
+[MFLOG|0|2024-04-26T18:07:13.172583Z|runtime|ac99948b-2294-4386-a8cc-31471b9eb74f]<flow DataAnalysisFlow step train_word2vec> failed:
+[MFLOG|0|2024-04-26T18:07:13.179632Z|runtime|bb784fd6-7184-4407-b0b2-fa972960466d]    Internal error
+[MFLOG|0|2024-04-26T18:07:13.181773Z|runtime|89928058-c99b-4ab1-8965-69def032b07a]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T18:07:13.181884Z|runtime|acb89b6a-4b1f-4c3c-bcfe-fd22fb9c3c3b]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T18:07:13.181944Z|runtime|da5318e0-4f6f-4e80-b322-00927006cc0f]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T18:07:13.181993Z|runtime|c2e48e91-9fba-45f5-b7ab-04033873763e]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T18:07:13.182033Z|runtime|583ffd9c-a57a-47db-a396-6271196106dd]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T18:07:13.182079Z|runtime|26148910-1c47-4412-9d25-a2155d77de4b]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.182117Z|runtime|2e15aca3-7f1a-4d8c-b4bb-7561d5435eb1]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T18:07:13.182154Z|runtime|5d9794e3-4ce6-40e5-be7a-30452e7d4db1]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T18:07:13.393038Z|runtime|5b4c76c7-eacc-44fd-beb5-c2ddda471d4b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393203Z|runtime|2a912fa0-3835-4622-ae4a-eaf45874e82e]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T18:07:13.393251Z|runtime|ac06cc25-da4b-4091-ac10-6b2d1d393e07]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T18:07:13.393285Z|runtime|4463e1a7-e80e-4d55-94bd-93d22da6138f]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393314Z|runtime|9ab3107b-99a1-47f8-8462-d566bf801c8c]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T18:07:13.393343Z|runtime|06da2f34-096a-4648-9031-07f0dbdb19fc]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T18:07:13.393379Z|runtime|b7661d2b-2c21-480b-af4d-6cc7e9af9b35]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393411Z|runtime|5bf05ec2-24eb-41f1-a795-cec0c11eb4a4]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T18:07:13.393439Z|runtime|6a6d8d2f-9efa-444c-9aae-ce662e91a98d]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T18:07:13.393468Z|runtime|974440e3-d62d-4444-9077-8861f9430295]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393495Z|runtime|2a3e436e-4542-450b-a233-337bc9c97ffb]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T18:07:13.393520Z|runtime|784d58e7-e912-4d5d-b1a3-66de181705b4]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T18:07:13.393547Z|runtime|7b3405d8-2bd9-4d8e-a047-bfc936736654]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393573Z|runtime|4cd327ea-1a4a-4e2b-9093-bc7c3cde580e]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T18:07:13.393599Z|runtime|592dd0f2-625f-4b81-9969-72aa21940cb8]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T18:07:13.393624Z|runtime|08e8dcb9-3a97-4714-98db-d806884cbff5]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393650Z|runtime|c4851931-d806-4ad4-825e-5db81f90d6f4]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T18:07:13.393676Z|runtime|1cbe93ab-07b8-4e79-ae43-364130e592da]    task.run_step(
+[MFLOG|0|2024-04-26T18:07:13.393712Z|runtime|2904f00a-ee59-4a43-9609-29eadccd9655]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T18:07:13.393738Z|runtime|b340c218-1874-447d-83f0-97996fd7b4a9]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T18:07:13.393764Z|runtime|ab5f8192-30a9-4682-82b1-94bb0d1df2d7]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T18:07:13.393789Z|runtime|2529457e-2e11-4a2e-964b-333daad185c2]    step_function()
+[MFLOG|0|2024-04-26T18:07:13.393818Z|runtime|76439ecd-e76b-4a63-91bc-6a4167f7b180]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 66, in train_word2vec
+[MFLOG|0|2024-04-26T18:07:13.393846Z|runtime|833d904e-f82d-4d86-88e9-46fef0b84c4d]    self.model, self.avg_vectors = dp.train_and_get_word2vec(self.texts)
+[MFLOG|0|2024-04-26T18:07:13.393872Z|runtime|7fdddb9d-2d8e-463f-b99c-80de2bd9bc31]                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393901Z|runtime|24b59fa1-e117-4d4d-9170-926781ffc93a]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 114, in train_and_get_word2vec
+[MFLOG|0|2024-04-26T18:07:13.393928Z|runtime|aaeed056-7893-494e-aab8-c5a7cfd4e234]    avg_vectors = average_word_vectors(model, cleaned_texts)
+[MFLOG|0|2024-04-26T18:07:13.393953Z|runtime|0bac1661-a9f9-4efb-9730-4002394087fd]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.393980Z|runtime|29d07286-d5c7-4293-ad7a-d2e4c8bdebe9]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 118, in average_word_vectors
+[MFLOG|0|2024-04-26T18:07:13.394007Z|runtime|89b6fd27-3c49-4ff4-991c-d584a54e67fb]    cleaned_texts = [clean_data(text) for text in texts]
+[MFLOG|0|2024-04-26T18:07:13.394032Z|runtime|ea238245-0358-45b8-88e0-1e823795640a]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.394057Z|runtime|33cd3705-4764-4431-9841-f43951093139]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 118, in <listcomp>
+[MFLOG|0|2024-04-26T18:07:13.394082Z|runtime|61510a74-67a8-44c0-8a28-5dba8b3b8e24]    cleaned_texts = [clean_data(text) for text in texts]
+[MFLOG|0|2024-04-26T18:07:13.394107Z|runtime|5b3ffa78-31ef-4d1f-9510-0bea3341deff]                     ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.394132Z|runtime|3cbd7f9d-33c5-4848-b8a7-ad7da8bc522c]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 107, in clean_data
+[MFLOG|0|2024-04-26T18:07:13.394157Z|runtime|e80fd997-a91f-4543-ad6c-e62283e43066]    text = text.lower()
+[MFLOG|0|2024-04-26T18:07:13.394185Z|runtime|977fd1ea-8196-4ecb-b6c6-51060c032906]           ^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:07:13.394213Z|runtime|ce5673db-71d0-4a58-b077-2f659deaa5d1]AttributeError: 'list' object has no attribute 'lower'
+[MFLOG|0|2024-04-26T18:07:13.394243Z|runtime|242dbd79-6a64-48e0-81fc-3b1be0721b66]
+[MFLOG|0|2024-04-26T18:07:13.394863Z|runtime|3a6f31a5-7e7b-40f0-8f2e-e90354110597]Task failed.

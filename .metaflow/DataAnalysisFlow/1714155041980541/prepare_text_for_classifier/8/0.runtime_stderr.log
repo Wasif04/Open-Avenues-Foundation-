@@ -1,0 +1,43 @@
+[MFLOG|0|2024-04-26T18:11:24.335798Z|runtime|8d576b70-9db7-4ad7-8c69-e1698fff3139]<flow DataAnalysisFlow step prepare_text_for_classifier> failed:
+[MFLOG|0|2024-04-26T18:11:24.342151Z|runtime|c0e50ef2-f683-47c0-9398-470f9f2bb707]    Internal error
+[MFLOG|0|2024-04-26T18:11:24.344369Z|runtime|1d55e1f4-02bc-4a4f-9d7e-c844b510111e]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T18:11:24.344446Z|runtime|695a1657-1be9-4e35-a4e6-05d519f49c59]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T18:11:24.344489Z|runtime|6b40e240-c01a-4d25-9ca4-04a01f82f014]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T18:11:24.344542Z|runtime|311af0f4-ecbd-481e-bf54-3760caafbcf0]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T18:11:24.344578Z|runtime|9f389d45-0f6e-4cdf-bba2-70593febabbe]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T18:11:24.540819Z|runtime|b8b892d4-c8d3-4659-9312-373ad10206c4]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541004Z|runtime|0ef6dc90-194c-424d-ae97-1daf9dbce5ac]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T18:11:24.541064Z|runtime|da61cb4c-15d8-4478-9d2e-3832b9f91148]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T18:11:24.541105Z|runtime|41d832bb-ca34-4476-a731-45f26c7c244d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541144Z|runtime|180c712a-5c4a-4c52-9373-5c4c6c8bf866]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T18:11:24.541178Z|runtime|fed1f6cc-0235-4dfe-b63b-6476384876db]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T18:11:24.541210Z|runtime|b87e0f3d-2a28-4d22-80ee-b080c24f3f8f]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541237Z|runtime|3195c932-a244-4d8a-930e-8debc2128ec0]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T18:11:24.541267Z|runtime|b7f2d896-ae21-4b14-87df-9ad2af4787c2]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T18:11:24.541296Z|runtime|ac6282fb-5fae-4f8d-b4eb-a388d7cabe45]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541325Z|runtime|e010ab06-733c-4f69-85db-cf49e070ad70]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T18:11:24.541351Z|runtime|324e5f5f-ff7a-4140-884a-6f1168bf092d]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T18:11:24.541383Z|runtime|d8e108f3-4200-4a99-b501-cff8416e4239]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541409Z|runtime|a4977ccc-285f-470e-a751-d98d127f84d7]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T18:11:24.541442Z|runtime|7c4a933f-9acf-4942-b642-14ff5ee2bdb3]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T18:11:24.541468Z|runtime|d8de4d42-b3e8-48ee-bf1c-e7961d22da95]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541494Z|runtime|27ad63e7-fe7d-4f89-84e5-3938d1bef735]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T18:11:24.541524Z|runtime|e5386af9-dd90-47f4-a624-ea7b62777ba9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T18:11:24.541550Z|runtime|bbd99a67-1680-4ea6-950a-509783d2cc01]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541576Z|runtime|e687f125-d5be-47ae-8add-9acd06a5b5c8]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T18:11:24.541603Z|runtime|bc52f6ad-e69d-4822-8283-c3e164431394]    task.run_step(
+[MFLOG|0|2024-04-26T18:11:24.541634Z|runtime|51578efc-9a19-45df-a2c0-3789b7769d68]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T18:11:24.541659Z|runtime|bdba0db2-e43f-47e9-9b6d-ff4901f6d892]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T18:11:24.541685Z|runtime|7c50bea5-6c6d-41a0-b438-b96f124628e0]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T18:11:24.541710Z|runtime|6102cf45-1fda-4c3d-9c98-529346fb78d3]    step_function()
+[MFLOG|0|2024-04-26T18:11:24.541736Z|runtime|eba4f366-5249-49ca-a71e-b9fc6b5f22f0]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 49, in prepare_text_for_classifier
+[MFLOG|0|2024-04-26T18:11:24.541762Z|runtime|3d64aed4-7f8b-4d27-815f-77d015a1cea6]    self.texts, self.field_types = dp.prepare_text_data(self.df)
+[MFLOG|0|2024-04-26T18:11:24.541787Z|runtime|ae8aeb4e-015b-439d-8c45-8dc510d237bc]                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541812Z|runtime|26486e60-5aba-4c7e-833b-2c58b1cf9b94]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 83, in prepare_text_data
+[MFLOG|0|2024-04-26T18:11:24.541837Z|runtime|b6096890-fcc4-4474-abe5-50002d67b3ac]    df_cleaned = df.dropna(subset=['Clinicaldata'])
+[MFLOG|0|2024-04-26T18:11:24.541865Z|runtime|52bf189d-f30e-42d9-a352-3ee2d32aa34a]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:11:24.541891Z|runtime|431a5bbf-fda0-4dd6-b29e-b4add1e2d580]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 6670, in dropna
+[MFLOG|0|2024-04-26T18:11:24.541916Z|runtime|3d693afb-4eff-4b1a-9020-3825f5e51592]    raise KeyError(np.array(subset)[check].tolist())
+[MFLOG|0|2024-04-26T18:11:24.541941Z|runtime|7c2d2991-40a9-4f0f-8a83-e5a4b97fe26a]KeyError: ['Clinicaldata']
+[MFLOG|0|2024-04-26T18:11:24.541967Z|runtime|7670addb-4be0-43d5-80b0-86c6d42ea5f9]
+[MFLOG|0|2024-04-26T18:11:24.542472Z|runtime|14f90dce-0d11-49f3-8a0a-782f0d9013d0]Task failed.

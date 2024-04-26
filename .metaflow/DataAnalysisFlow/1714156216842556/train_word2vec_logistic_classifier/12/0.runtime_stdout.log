@@ -1,0 +1,13 @@
+[MFLOG|0|2024-04-26T18:31:07.604543Z|runtime|f2639c79-157f-4192-a393-a859127975ad]Word2Vec Logistic Classifier Accuracy: 0.9736842105263158
+[MFLOG|0|2024-04-26T18:31:07.850900Z|runtime|79c35c1e-e374-4045-b2bd-8589e8c641a3]Word2Vec Logistic Classifier Report:
+[MFLOG|0|2024-04-26T18:31:07.851104Z|runtime|f1f8653d-b315-4a71-a401-c4c51281dcdf]               precision    recall  f1-score   support
+[MFLOG|0|2024-04-26T18:31:07.851189Z|runtime|ffd86805-0990-4576-94b3-f722339beb8c]
+[MFLOG|0|2024-04-26T18:31:07.851252Z|runtime|a87d32f0-711b-4e43-a8a8-d2856307192b]           0       1.00      0.99      1.00       189
+[MFLOG|0|2024-04-26T18:31:07.851296Z|runtime|f2882d5c-7d2e-4c52-9f5d-f55e4a15312a]           1       1.00      0.98      0.99       187
+[MFLOG|0|2024-04-26T18:31:07.851328Z|runtime|19270165-86bc-4edb-8fd9-e48ab23fde6e]           2       0.92      0.98      0.95       186
+[MFLOG|0|2024-04-26T18:31:07.851364Z|runtime|9eac675b-274a-4c2e-8965-57cbd2fde721]           3       0.98      0.93      0.96       198
+[MFLOG|0|2024-04-26T18:31:07.851396Z|runtime|2e1d6993-63f5-4ed8-a918-88761d7092d8]
+[MFLOG|0|2024-04-26T18:31:07.851425Z|runtime|50f49e8c-c71b-415c-8466-16d09d2bcdae]    accuracy                           0.97       760
+[MFLOG|0|2024-04-26T18:31:07.851451Z|runtime|fa78a90e-2bf8-4f3d-94b7-7a09d21606a6]   macro avg       0.97      0.97      0.97       760
+[MFLOG|0|2024-04-26T18:31:07.851482Z|runtime|e07b10e4-d145-4378-a445-6f8838939d8c]weighted avg       0.97      0.97      0.97       760
+[MFLOG|0|2024-04-26T18:31:07.851507Z|runtime|a09a02d2-1956-4a4e-a949-e3ff63f0ea07]

@@ -1,0 +1,13 @@
+[MFLOG|0|2024-04-26T18:19:49.026182Z|runtime|a051ae86-35ac-4d5d-89f7-ac37bd69bbcb]Accuracy: 0.993421052631579
+[MFLOG|0|2024-04-26T18:19:49.238638Z|runtime|7f9733f3-88bb-47ae-a44a-b9b2ff7c082d]Classification Report:
+[MFLOG|0|2024-04-26T18:19:49.238780Z|runtime|b0e406e9-3e6f-41a3-bbe4-bcac7078936c]               precision    recall  f1-score   support
+[MFLOG|0|2024-04-26T18:19:49.238833Z|runtime|c8e8255a-6186-49f6-a64d-f88af9c5e0b0]
+[MFLOG|0|2024-04-26T18:19:49.238872Z|runtime|ed4fc598-335d-42e0-8196-5f8d514addfb]           0       1.00      1.00      1.00       189
+[MFLOG|0|2024-04-26T18:19:49.238917Z|runtime|b54795c5-5b9b-4b81-a1dc-22b62004453e]           1       1.00      0.99      1.00       187
+[MFLOG|0|2024-04-26T18:19:49.238958Z|runtime|d7f862a7-95c8-4747-98c4-5da21af9d1b1]           2       0.98      0.99      0.99       186
+[MFLOG|0|2024-04-26T18:19:49.238999Z|runtime|7783a9fa-debe-4700-9e07-20019d432814]           3       0.99      0.99      0.99       198
+[MFLOG|0|2024-04-26T18:19:49.239035Z|runtime|8e4723d1-464a-4aeb-8288-941d95c8442c]
+[MFLOG|0|2024-04-26T18:19:49.239061Z|runtime|7a17a9f5-7fac-48c9-85d8-ef60b95cc64b]    accuracy                           0.99       760
+[MFLOG|0|2024-04-26T18:19:49.239089Z|runtime|b0667930-54f9-48ee-b620-6ff33a160d6c]   macro avg       0.99      0.99      0.99       760
+[MFLOG|0|2024-04-26T18:19:49.239179Z|runtime|721ac9ac-1c80-472d-94e9-c0d1595819e3]weighted avg       0.99      0.99      0.99       760
+[MFLOG|0|2024-04-26T18:19:49.239208Z|runtime|f5a489ce-ea6a-4993-9552-abbbfaaac4aa]

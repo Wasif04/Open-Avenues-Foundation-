@@ -1,0 +1,53 @@
+[MFLOG|0|2024-04-26T17:26:13.108377Z|runtime|bad75d07-62b2-4f9f-8e43-10d3fb4e9323]/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/pandas/core/arrays/masked.py:60: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.5' currently installed).
+[MFLOG|0|2024-04-26T17:26:14.513011Z|runtime|fda00d27-c477-43fe-8a87-acb2be44fb4e]  from pandas.core import (
+[MFLOG|0|2024-04-26T17:26:14.513195Z|runtime|40cd8bda-b006-4896-96cd-79e10f660104]<flow DataAnalysisFlow step start> failed:
+[MFLOG|0|2024-04-26T17:26:14.517388Z|runtime|fbf3f139-7f4b-4e27-a372-226989d4c9ee]    Internal error
+[MFLOG|0|2024-04-26T17:26:14.518710Z|runtime|a2bdc65a-ed61-4412-ad01-30295428b8dd]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T17:26:14.518783Z|runtime|0d660c83-d69a-4e89-954c-0aec2d710c1e]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T17:26:14.518836Z|runtime|e1589048-041d-44d3-be8d-b32b5677d471]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T17:26:14.518891Z|runtime|a90026b8-460a-43b6-ad84-95f0f3f6c8cc]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T17:26:14.518941Z|runtime|ffe5782d-70b1-4a3a-85a3-f0df6b6bb73b]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T17:26:14.744818Z|runtime|16e0dedf-4f95-4a32-b2d5-5374c10ca729]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745037Z|runtime|6d5284d2-335f-4232-be19-5f30ca766f34]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T17:26:14.745093Z|runtime|75493697-710e-4b1c-9473-229cf30a38ac]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T17:26:14.745130Z|runtime|b2ba6504-3c9c-4b9a-818e-04656f8eb4fc]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745160Z|runtime|66e22776-1f85-49cc-af5f-4186bbe97169]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T17:26:14.745188Z|runtime|1b8e5756-b1e3-42f1-a1e2-c70ac602a9f3]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T17:26:14.745217Z|runtime|5e7285a0-ab3f-4cef-a0a7-2dcaa6b6b7f4]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745244Z|runtime|2951fd27-3df9-4f75-acd4-26496a5ffe99]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T17:26:14.745274Z|runtime|976ddf64-ba70-4d98-b38f-2f8013c05b46]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T17:26:14.745301Z|runtime|3c2d2c54-b763-4b63-9a63-435a1594198c]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745327Z|runtime|836521e3-ae9d-47d4-a15c-cb115a602fcc]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T17:26:14.745353Z|runtime|48963699-8fc2-46ab-9066-068603125722]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T17:26:14.745378Z|runtime|0a71241d-9295-4cd3-aecd-50f140ff3434]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745404Z|runtime|e59a47f4-ee27-4944-8ce8-7dc4ef07365a]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T17:26:14.745429Z|runtime|b663eaf2-3d0e-4b11-ba6a-2fc6c9ea83e2]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T17:26:14.745454Z|runtime|3a6a1f00-b0ad-4d7f-94c0-1fde987c132f]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745479Z|runtime|9c3d254d-bebd-4d59-9dc4-f7af91307115]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T17:26:14.745511Z|runtime|6e0b031f-4947-4a11-9a4c-8854d0ab50a1]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T17:26:14.745536Z|runtime|ca1e0ed5-5b7b-43b4-a260-cc4fad8e055f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745561Z|runtime|8dbd2106-f80a-4d1c-930a-366d27630e12]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T17:26:14.745586Z|runtime|31805e1a-dda4-47df-ac61-800ae710fbee]    task.run_step(
+[MFLOG|0|2024-04-26T17:26:14.745619Z|runtime|e5dc3058-7f24-4419-97ce-7c3f05a8b377]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T17:26:14.745644Z|runtime|ba2d2e04-1f92-4995-af5f-165d57f5a09d]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T17:26:14.745668Z|runtime|88fc2f37-9698-4b01-bbe1-2e8e23220581]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T17:26:14.745693Z|runtime|148b4257-6706-4022-a9a3-1139b034ba85]    step_function()
+[MFLOG|0|2024-04-26T17:26:14.745718Z|runtime|e933d617-5476-44dc-a3cc-cc6729b3e838]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 13, in start
+[MFLOG|0|2024-04-26T17:26:14.745743Z|runtime|7d83a06b-bee7-4b2e-ac7f-4238c6e3ed32]    self.df = dp.load_data('open_ave_data.xlsx')
+[MFLOG|0|2024-04-26T17:26:14.745767Z|runtime|13bc16b1-e0f8-4619-8c9f-346cd24371b4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745791Z|runtime|f82e30c3-4011-4e18-a83e-82147b40a1c2]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 18, in load_data
+[MFLOG|0|2024-04-26T17:26:14.745819Z|runtime|30345a8a-d63e-4af6-8818-a0c649c541d1]    return pd.read_excel(file_path)
+[MFLOG|0|2024-04-26T17:26:14.745843Z|runtime|d870ae02-1940-4fc9-990a-0c9ab35911af]           ^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745867Z|runtime|a46891ab-2c79-4f81-8b2a-960dab1961c5]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/pandas/io/excel/_base.py", line 495, in read_excel
+[MFLOG|0|2024-04-26T17:26:14.745891Z|runtime|e89307f4-a14d-4a02-8e07-c4a1396d0b47]    io = ExcelFile(
+[MFLOG|0|2024-04-26T17:26:14.745915Z|runtime|cec069cb-61d4-4669-b4ab-ec9094d62597]         ^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.745941Z|runtime|d29841a8-5134-473b-a6a3-c81bd306744d]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/pandas/io/excel/_base.py", line 1567, in __init__
+[MFLOG|0|2024-04-26T17:26:14.745966Z|runtime|36668f29-95b3-4e0a-9c90-e76b111665b0]    self._reader = self._engines[engine](
+[MFLOG|0|2024-04-26T17:26:14.745990Z|runtime|0429582f-7d05-4294-afd8-49e0cd33cda8]                   ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:26:14.746014Z|runtime|b174ec16-3218-4f8e-b07c-cb724defaaf0]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/pandas/io/excel/_openpyxl.py", line 552, in __init__
+[MFLOG|0|2024-04-26T17:26:14.746038Z|runtime|2f58ccb2-c3c4-4c69-a1c9-a3d516b9cbda]    import_optional_dependency("openpyxl")
+[MFLOG|0|2024-04-26T17:26:14.746062Z|runtime|4cc02667-c21d-492e-b0b7-affc7d5d459d]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/pandas/compat/_optional.py", line 164, in import_optional_dependency
+[MFLOG|0|2024-04-26T17:26:14.746087Z|runtime|2c098f3e-e9be-4ac3-aa9d-aca922c15f91]    raise ImportError(msg)
+[MFLOG|0|2024-04-26T17:26:14.746115Z|runtime|aafa6bd3-7571-4709-bfbb-6e16358d252b]ImportError: Pandas requires version '3.1.0' or newer of 'openpyxl' (version '3.0.10' currently installed).
+[MFLOG|0|2024-04-26T17:26:14.746140Z|runtime|63567722-af57-481d-a9ff-0977a74875b3]
+[MFLOG|0|2024-04-26T17:26:14.746689Z|runtime|683d4a24-f1be-4637-a77d-2e2ff1da07a4]Task failed.

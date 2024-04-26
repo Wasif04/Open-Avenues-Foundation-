@@ -1,0 +1,43 @@
+[MFLOG|0|2024-04-26T17:11:32.157633Z|runtime|7ac447ed-7df7-46f6-9f5c-49bc56fbc83f]<flow DataAnalysisFlow step visualize_word_vectors> failed:
+[MFLOG|0|2024-04-26T17:11:32.242484Z|runtime|e3e5026e-26ea-411f-ab32-e49a045d08a5]    Internal error
+[MFLOG|0|2024-04-26T17:11:32.244857Z|runtime|1ee34d58-a4f8-4a3a-aed0-22364d50243c]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T17:11:32.244972Z|runtime|6359559b-55a2-40b5-b3cc-6f581ac58d5f]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T17:11:32.245030Z|runtime|35c70419-132e-4ad0-8fba-83263e79093b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T17:11:32.245077Z|runtime|278ddbef-9fc1-4366-9268-7c3c24fbe7fa]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T17:11:32.245122Z|runtime|60388df3-4327-433c-b14b-86b45200a116]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T17:11:32.485267Z|runtime|aaaa302e-1052-4518-95fa-b1b4370f5ad9]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.485580Z|runtime|7bb41671-92d7-4dce-be2a-2675c690be24]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T17:11:32.485786Z|runtime|94704d8a-9cfc-47da-bff6-ac0b460b5052]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T17:11:32.485849Z|runtime|70717f55-bc3a-4f2d-9644-198b186c63fb]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.485899Z|runtime|90057a9e-edd9-4686-943e-e71de8c8fd26]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T17:11:32.485945Z|runtime|1defa8c1-c151-42d2-8321-90ca01969b64]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T17:11:32.486014Z|runtime|b415e9e4-387a-4885-a3dd-699328419b87]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.486200Z|runtime|4a7d831e-64ff-48a5-9303-0c51449c2dca]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T17:11:32.486264Z|runtime|b08502ab-8231-4e27-9d69-13fae43ce1fb]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T17:11:32.486310Z|runtime|dbdb171f-bb1f-482a-b4bb-a79adb8befc0]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.486358Z|runtime|b45f2a31-f59e-4754-b615-cfbb0c2f00f6]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T17:11:32.486401Z|runtime|ab1673e5-7b62-413b-8bc2-d1933a31c797]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T17:11:32.486548Z|runtime|ba1c75f4-1fd1-41d8-9cb3-5c549458cb81]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.486693Z|runtime|23f204cd-4af4-492d-9190-e574ae8fb291]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T17:11:32.486741Z|runtime|ecd1f73a-b3c9-4905-9721-988206f35a49]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T17:11:32.486788Z|runtime|0fd697cc-f20b-44ff-b38f-43ded690f6df]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.486822Z|runtime|bcef1cd3-ef93-41be-ab31-5e300962ebae]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T17:11:32.486854Z|runtime|b094b6d5-34e5-4b8e-b52e-2e51e5fa0ea9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T17:11:32.486885Z|runtime|4f407d0f-32cf-4b88-888d-392ed7a9beed]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.486915Z|runtime|6357124d-94d4-44e8-ac42-fbcc7cac946d]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T17:11:32.486944Z|runtime|5c8e2378-84fe-42f2-aff8-1441f45398b6]    task.run_step(
+[MFLOG|0|2024-04-26T17:11:32.486983Z|runtime|92286bdd-5eba-4571-8921-8dbf55954272]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T17:11:32.487017Z|runtime|e7e74732-fbaa-4318-a5a9-badc586650bc]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T17:11:32.487047Z|runtime|438da03d-607c-4f33-9597-3220e8b7ac92]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T17:11:32.487078Z|runtime|20590593-601d-44d6-bbe3-1153076dd4e4]    step_function()
+[MFLOG|0|2024-04-26T17:11:32.487107Z|runtime|95b695f5-dc69-4767-8c40-a0644807af3f]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 73, in visualize_word_vectors
+[MFLOG|0|2024-04-26T17:11:32.487136Z|runtime|7091fa73-b780-4830-a51f-3cc15339a2ba]    dp.visualize_word_vectors(self.model, self.texts, self.field_types)
+[MFLOG|0|2024-04-26T17:11:32.487165Z|runtime|5c6c9ec3-71e3-405c-b7d3-55a2dea20016]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 145, in visualize_word_vectors
+[MFLOG|0|2024-04-26T17:11:32.487197Z|runtime|fd387d00-09e6-45a6-9b66-80aa011d6a19]    avg_word_vectors = [average_word_vectors(text, model, vocabulary, 300) for text in texts]
+[MFLOG|0|2024-04-26T17:11:32.487225Z|runtime|81ead720-5fd0-4e95-9ffb-3122e1033328]                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.487254Z|runtime|eedaec11-0110-4c35-a847-53d88246dbdf]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 145, in <listcomp>
+[MFLOG|0|2024-04-26T17:11:32.487283Z|runtime|57099bfb-a395-4493-b6ff-1a7a1ac86e0f]    avg_word_vectors = [average_word_vectors(text, model, vocabulary, 300) for text in texts]
+[MFLOG|0|2024-04-26T17:11:32.487314Z|runtime|71b02d91-be83-47b6-af66-d6eafb9463f4]                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:11:32.487343Z|runtime|deaf231a-00b9-461b-8f8f-d3bad9c991f8]TypeError: average_word_vectors() takes from 2 to 3 positional arguments but 4 were given
+[MFLOG|0|2024-04-26T17:11:32.487373Z|runtime|95cf7767-bfb8-4ce1-89bb-1a40155be72d]
+[MFLOG|0|2024-04-26T17:11:32.487958Z|runtime|ae344dfd-7741-42a6-8418-80d9bb72af99]Task failed.

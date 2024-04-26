@@ -1,0 +1,86 @@
+[MFLOG|0|2024-04-26T17:21:22.407933Z|runtime|9eca3078-165b-4a0e-a569-4d3db6da904d]<flow DataAnalysisFlow step tfidf_tsne_analysis> failed:
+[MFLOG|0|2024-04-26T17:21:22.415783Z|runtime|2d198b5f-8438-4d55-83b8-ab15a6c188ba]    Internal error
+[MFLOG|0|2024-04-26T17:21:22.418903Z|runtime|c5384775-5705-4991-9894-c9abaf8bb355]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T17:21:22.419083Z|runtime|74334799-52e8-40ef-8257-e7d64d870080]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T17:21:22.419276Z|runtime|bbdfcd67-84de-44e2-af80-3cd5ca62ac4a]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T17:21:22.419365Z|runtime|941c77a2-c04b-42b0-a783-be134278b854]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T17:21:22.419457Z|runtime|a3e4c0f0-b4d5-4510-982c-46ffd5ba0d40]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T17:21:22.419526Z|runtime|9a832515-f620-40a6-b935-b0eb55e47b52]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.419584Z|runtime|9d64bd5e-ca51-4b0a-a8b4-4e5b20510f18]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T17:21:22.419645Z|runtime|7a3a8529-68d1-47ab-b991-4f02110073e0]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T17:21:22.671820Z|runtime|e842eae2-273c-4d1e-b030-6360b0400fb0]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672056Z|runtime|0f0cc803-3fe2-4d42-92ae-120b469e4728]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T17:21:22.672108Z|runtime|dcc7253b-56fc-4fe8-b315-2538f204cf08]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T17:21:22.672145Z|runtime|b61b5318-a63d-4ced-bea6-103fc530069f]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672175Z|runtime|50051cbd-0d15-4226-8df7-f9475f9f3a95]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T17:21:22.672203Z|runtime|5f1e8159-5177-4ead-ad4e-bb1061d8f6f9]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T17:21:22.672232Z|runtime|c02f0198-35e6-4baf-9359-bf2652af1a73]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672260Z|runtime|24ebca31-88bf-4f66-864f-b8680c2d2a2f]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T17:21:22.672286Z|runtime|b3e2520e-26d6-42f0-9508-ca0939f62c57]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T17:21:22.672311Z|runtime|7c870e24-f0cc-4e7e-91c2-0e416f3f5178]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672337Z|runtime|2f33f2f7-13e6-4885-8f6a-9f708e0a0cbd]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T17:21:22.672365Z|runtime|1dddde40-1068-406d-955d-097c4d77a9b7]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T17:21:22.672391Z|runtime|0de4ac61-b6d9-494b-a547-b4af0eb91331]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672416Z|runtime|ece500d9-23d0-4055-baf0-9d06e2e927ac]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T17:21:22.672441Z|runtime|2a30291e-6404-416f-86e9-8c630f37cfb2]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T17:21:22.672466Z|runtime|5bdd0f41-c48b-4d37-afd8-1bd074b0965c]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672490Z|runtime|030e4c1f-0979-4d36-a5dd-4bea3aa43af8]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T17:21:22.672516Z|runtime|6fe1ad90-f45a-4013-b2b2-7cae81768efc]    task.run_step(
+[MFLOG|0|2024-04-26T17:21:22.672545Z|runtime|e2d736c8-34d6-42b8-ad56-9373842ca529]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T17:21:22.672572Z|runtime|56c60952-0d8c-492f-81a3-f1a0ff95adec]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T17:21:22.672596Z|runtime|e58db3a9-c5d8-465f-b6e2-2891282d97e0]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T17:21:22.672622Z|runtime|26c28248-9b59-4090-bffe-b4cd1de22650]    step_function()
+[MFLOG|0|2024-04-26T17:21:22.672650Z|runtime|f19b663f-439f-40a2-a22b-0d0b60997e88]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 46, in tfidf_tsne_analysis
+[MFLOG|0|2024-04-26T17:21:22.672675Z|runtime|0c190971-e381-487a-a89f-8f2e46ada58c]    dp.perform_tfidf_tsne_analysis(self.df)
+[MFLOG|0|2024-04-26T17:21:22.672700Z|runtime|4cf5d9c8-acd1-46e2-83d5-90f92314183d]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/data_processing.py", line 58, in perform_tfidf_tsne_analysis
+[MFLOG|0|2024-04-26T17:21:22.672725Z|runtime|9a4bb4f6-8c2e-4246-8e92-11aa60321969]    X_reduced = tsne.fit_transform(X_tfidf.toarray())  # Convert to dense matrix
+[MFLOG|0|2024-04-26T17:21:22.672750Z|runtime|02e2f32a-09c8-4dd9-aafa-27074471a883]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672780Z|runtime|973b01e6-43c4-47dc-abb2-fd07bdbd3bbf]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/utils/_set_output.py", line 140, in wrapped
+[MFLOG|0|2024-04-26T17:21:22.672807Z|runtime|e3c9cf8b-f91a-46ec-9d83-2b77d2746869]    data_to_wrap = f(self, X, args, kwargs)
+[MFLOG|0|2024-04-26T17:21:22.672831Z|runtime|b7b62fb8-f71d-401c-a6f4-53f314977bfb]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672856Z|runtime|f3b5facc-fada-4c38-8d5d-1f3832ae5cc2]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/base.py", line 1151, in wrapper
+[MFLOG|0|2024-04-26T17:21:22.672881Z|runtime|10e4831e-f750-4fa2-a1cc-5b2a513d4ece]    return fit_method(estimator, args, kwargs)
+[MFLOG|0|2024-04-26T17:21:22.672908Z|runtime|3ceafadf-0d77-415f-841e-926df3920c96]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.672933Z|runtime|1ed6c7fb-beef-4f18-b03f-bc1c177f530e]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/manifold/_t_sne.py", line 1111, in fit_transform
+[MFLOG|0|2024-04-26T17:21:22.672957Z|runtime|866b03cd-2f72-49ab-8688-1ce3dd7ec47e]    embedding = self._fit(X)
+[MFLOG|0|2024-04-26T17:21:22.672985Z|runtime|d57d28e2-dc18-44af-a69d-96a7c40bdf87]                ^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673010Z|runtime|ad6052d4-c2e9-4a66-88a0-5c0bf5e31a0b]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/manifold/_t_sne.py", line 952, in _fit
+[MFLOG|0|2024-04-26T17:21:22.673034Z|runtime|ea325b74-2892-4cd0-acb8-345cb9bf20c8]    distances_nn = knn.kneighbors_graph(mode="distance")
+[MFLOG|0|2024-04-26T17:21:22.673063Z|runtime|bb277aec-7846-4e27-8384-9a55d8ce075c]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673088Z|runtime|799caeb8-1e9f-45dc-9660-3981dbefbfea]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/neighbors/_base.py", line 986, in kneighbors_graph
+[MFLOG|0|2024-04-26T17:21:22.673112Z|runtime|a9ea6546-be24-4f82-9956-c69090d50892]    A_data, A_ind = self.kneighbors(X, n_neighbors, return_distance=True)
+[MFLOG|0|2024-04-26T17:21:22.673138Z|runtime|b5d37b94-d760-450a-9208-44a5ef4e1628]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673163Z|runtime|b40ad40a-2f53-428e-8389-3306a6a1dc0f]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/neighbors/_base.py", line 822, in kneighbors
+[MFLOG|0|2024-04-26T17:21:22.673188Z|runtime|57f39d62-c9ce-446e-a466-08c098dbd7d9]    results = ArgKmin.compute(
+[MFLOG|0|2024-04-26T17:21:22.673217Z|runtime|39acb959-f616-4603-bc42-dc49ac973a67]              ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673241Z|runtime|d83e1b7f-0d6e-4c70-a51c-835b9e21f40f]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py", line 258, in compute
+[MFLOG|0|2024-04-26T17:21:22.673266Z|runtime|eeef1d3d-e805-4644-b260-ef861b904d37]    return ArgKmin64.compute(
+[MFLOG|0|2024-04-26T17:21:22.673291Z|runtime|20ff5480-e40e-4b09-96aa-c959b4fcc7e4]           ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673315Z|runtime|a31e431c-6363-410f-9fa9-3c90e73eb238]  File "sklearn/metrics/_pairwise_distances_reduction/_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+[MFLOG|0|2024-04-26T17:21:22.673341Z|runtime|bc90318f-ee56-430c-8c7e-70da1b3827b2]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/sklearn/utils/fixes.py", line 72, in threadpool_limits
+[MFLOG|0|2024-04-26T17:21:22.673365Z|runtime|267b675c-d199-4580-ba1f-d5bc8eb03776]    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+[MFLOG|0|2024-04-26T17:21:22.673395Z|runtime|dbf39039-c916-491c-8b68-2c78d4f24050]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673421Z|runtime|39bf0afb-c0b4-43b8-88b2-f7b613333c52]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 171, in __init__
+[MFLOG|0|2024-04-26T17:21:22.673447Z|runtime|40e76641-3146-44eb-8c5b-9dcb51910a29]    self._original_info = self._set_threadpool_limits()
+[MFLOG|0|2024-04-26T17:21:22.673471Z|runtime|ad2d33b1-0c93-414d-a9cc-f2282037bcc5]                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673496Z|runtime|2052f40c-ec3f-4971-ba47-d35a0af7c300]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 268, in _set_threadpool_limits
+[MFLOG|0|2024-04-26T17:21:22.673521Z|runtime|f60aa275-70c5-454d-85bf-c36dc07b46aa]    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+[MFLOG|0|2024-04-26T17:21:22.673545Z|runtime|d655b59c-2fd5-425f-b134-c1b953420f49]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673569Z|runtime|f19fa2af-419d-4b20-8d27-17ac4f72ec6b]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 340, in __init__
+[MFLOG|0|2024-04-26T17:21:22.673594Z|runtime|c2660086-b94f-4dae-a0f1-b80703f8deb5]    self._load_modules()
+[MFLOG|0|2024-04-26T17:21:22.673618Z|runtime|defd6e52-9f35-42e6-baae-9c22f0d700b5]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 371, in _load_modules
+[MFLOG|0|2024-04-26T17:21:22.673643Z|runtime|77ab6fca-08b5-44ae-9b97-ba6693a54a71]    self._find_modules_with_dyld()
+[MFLOG|0|2024-04-26T17:21:22.673667Z|runtime|2f069ed2-c8b2-4af9-8231-04b64b37199c]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 428, in _find_modules_with_dyld
+[MFLOG|0|2024-04-26T17:21:22.673692Z|runtime|1c336f3a-e26d-4bb8-a803-618ab022529d]    self._make_module_from_path(filepath)
+[MFLOG|0|2024-04-26T17:21:22.673718Z|runtime|3835b3f8-7bc6-41d0-a6e4-93e8cbbc832d]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 515, in _make_module_from_path
+[MFLOG|0|2024-04-26T17:21:22.673742Z|runtime|547532de-24e7-465f-8304-086f517af01f]    module = module_class(filepath, prefix, user_api, internal_api)
+[MFLOG|0|2024-04-26T17:21:22.673766Z|runtime|99a3dcf5-dbcc-4eda-af06-9e00f2554528]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673791Z|runtime|59002e4c-2c91-4ab1-b0e4-bf4407f1f1b6]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 606, in __init__
+[MFLOG|0|2024-04-26T17:21:22.673816Z|runtime|348522df-f034-4cf9-9f10-63e3bf2848ce]    self.version = self.get_version()
+[MFLOG|0|2024-04-26T17:21:22.673840Z|runtime|3459c125-822c-4b09-a549-f3596a71cdab]                   ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673865Z|runtime|f0e34965-34b8-41a3-a790-9db79bc9b160]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/threadpoolctl.py", line 646, in get_version
+[MFLOG|0|2024-04-26T17:21:22.673889Z|runtime|5fdf6d80-95fa-410e-bdf7-8d3fd1cd431a]    config = get_config().split()
+[MFLOG|0|2024-04-26T17:21:22.673913Z|runtime|502c3508-d095-4427-ba19-b01d8cbe83dc]             ^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T17:21:22.673938Z|runtime|b8d96dcc-ecaf-4d44-a57c-6d290553ca75]AttributeError: 'NoneType' object has no attribute 'split'
+[MFLOG|0|2024-04-26T17:21:22.673962Z|runtime|5fc91141-c425-4f3c-b7cc-78eb5f9006d9]
+[MFLOG|0|2024-04-26T17:21:22.674445Z|runtime|0391495c-c7f4-42b1-9c1c-c56f47d0ff2f]Task failed.

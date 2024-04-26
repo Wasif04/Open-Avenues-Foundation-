@@ -1,0 +1,38 @@
+[MFLOG|0|2024-04-26T18:51:43.774512Z|runtime|bb20a765-79af-4ae2-92cb-5928ff369529]<flow DataAnalysisFlow step train_tfidf_model> failed:
+[MFLOG|0|2024-04-26T18:51:43.781159Z|runtime|be994530-5c2b-4b7a-acad-600e49401f59]    Internal error
+[MFLOG|0|2024-04-26T18:51:43.783394Z|runtime|4ee2f7b0-15b2-46e1-8757-a8f22e784a66]Traceback (most recent call last):
+[MFLOG|0|2024-04-26T18:51:43.783479Z|runtime|eab6c291-7803-42ed-9a81-8ee71e61c4a6]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-26T18:51:43.783531Z|runtime|4de98f24-91a8-4e69-9bde-32c37f705170]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-26T18:51:43.783583Z|runtime|8badb45a-cf3c-46de-9a48-e58793b11144]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-26T18:51:43.783629Z|runtime|35888853-94f6-4bf2-8bd7-261c1ba392ef]    return func(args, kwargs)
+[MFLOG|0|2024-04-26T18:51:43.783670Z|runtime|9c194388-495c-4492-9368-04c1b64b458c]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.783707Z|runtime|74797e1e-97a9-44bc-b5a4-448e15debafa]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-26T18:51:43.783749Z|runtime|3757f544-d257-4862-b8c1-de5a08ba48dd]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-26T18:51:43.986468Z|runtime|a9fd71be-bd2f-4405-a899-2990eae72ebc]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.986663Z|runtime|5198d3f8-d7a6-44be-9130-d2664021ad78]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-26T18:51:43.986713Z|runtime|8af0f328-d99d-48e2-b97a-9a59b2c906f9]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-26T18:51:43.986749Z|runtime|a0aebcfa-8c4a-4038-9359-20eb4c5af8fe]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.986782Z|runtime|6dd60bb7-6a4d-4e92-a6b9-dc54349356c3]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-26T18:51:43.986815Z|runtime|4b1ef25f-59a7-453d-9711-d83980f42137]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-26T18:51:43.986845Z|runtime|94751283-d711-4398-9cd5-ba53b38f5904]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.986873Z|runtime|7bca1bb0-e0dd-48a6-82e9-623e28de0ce2]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-26T18:51:43.986899Z|runtime|edcbbc93-d10b-4967-a501-364212fa93cc]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-26T18:51:43.986935Z|runtime|fff7f2e3-f5c2-4da3-86c5-60bb8a569706]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.987219Z|runtime|8891b775-8152-4f39-907a-cc0b0b508a43]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-26T18:51:43.987257Z|runtime|0ffae352-2659-46b2-9f50-01bcb022a195]    return callback(args, kwargs)
+[MFLOG|0|2024-04-26T18:51:43.987285Z|runtime|32d918f7-0c23-4a3d-90ef-3d1c59e77b55]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.987315Z|runtime|33ceefae-925b-4c16-8ff0-12f9f1f11e0c]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-26T18:51:43.987342Z|runtime|2ff11474-7b61-46d2-a3b2-d87e0151760b]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-26T18:51:43.987372Z|runtime|072658f9-97c5-48aa-b4f8-d6e60f0c9440]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.987404Z|runtime|68f927f4-a218-4d86-aea0-dd2f9a140a57]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-26T18:51:43.987430Z|runtime|cb0bbe2c-6580-463d-b058-e3d7c5efbdaf]    task.run_step(
+[MFLOG|0|2024-04-26T18:51:43.987456Z|runtime|fe87491a-5f45-43d4-ad1d-9ede2bb6d185]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-26T18:51:43.987482Z|runtime|e6711c6f-67a5-4ddc-bb0f-43ae0c1dcfc2]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-26T18:51:43.987507Z|runtime|d2f522e9-2e22-4da1-9a7b-ae8101db8d36]  File "/Users/wasifkhan/anaconda3/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-26T18:51:43.987532Z|runtime|e38f5386-53b0-428a-a557-fd5dbc3add41]    step_function()
+[MFLOG|0|2024-04-26T18:51:43.987563Z|runtime|966b3cb5-bbab-49db-b68d-ee72c2722e67]  File "/Users/wasifkhan/Desktop/Open Avenues Foundation/Open-Avenues-Foundation-/myflow.py", line 54, in train_tfidf_model
+[MFLOG|0|2024-04-26T18:51:43.987590Z|runtime|7e4e0c2a-dcdf-41f3-95c2-9ef3550318fe]    self.tfidf_accuracy, self.tfidf_report, self.tfidf_f1 = dp.train_classifier(self.texts, self.field_types)
+[MFLOG|0|2024-04-26T18:51:43.987615Z|runtime|898c8eb3-d6ac-4fac-ae4f-740652aba2a8]    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-26T18:51:43.987640Z|runtime|395070d8-9217-4f57-a1f0-44a8172ea694]ValueError: not enough values to unpack (expected 3, got 2)
+[MFLOG|0|2024-04-26T18:51:43.987665Z|runtime|212ee19e-1931-4df1-a308-a71926da23b9]
+[MFLOG|0|2024-04-26T18:51:43.988196Z|runtime|841f5c04-4502-4329-a092-086ae0d4a8d5]Task failed.

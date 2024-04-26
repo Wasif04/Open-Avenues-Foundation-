@@ -1,0 +1,13 @@
+[MFLOG|0|2024-04-26T19:04:41.435237Z|runtime|14b448ab-c229-4582-9acd-4eaf35daf4cf]TF-IDF Classifier Accuracy: 0.993421052631579
+[MFLOG|0|2024-04-26T19:04:41.646589Z|runtime|5e9511ba-02af-4caa-9d1e-c0ac3fd066ea]TF-IDF Classifier Report:
+[MFLOG|0|2024-04-26T19:04:41.646761Z|runtime|a6372828-2c83-45a7-ae8b-2034e5e2cd55]               precision    recall  f1-score   support
+[MFLOG|0|2024-04-26T19:04:41.646812Z|runtime|85cc3b58-4a84-44f7-9aed-34befc3a4229]
+[MFLOG|0|2024-04-26T19:04:41.646857Z|runtime|c205dfb9-f5d9-4f32-95f2-23b768bb6fa9]           0       1.00      1.00      1.00       189
+[MFLOG|0|2024-04-26T19:04:41.646900Z|runtime|17823b2a-608e-4106-8cbe-caf91ed25c83]           1       1.00      0.99      1.00       187
+[MFLOG|0|2024-04-26T19:04:41.646938Z|runtime|bd7f9557-f78c-43b8-95e0-e7c45dc94c30]           2       0.98      0.99      0.99       186
+[MFLOG|0|2024-04-26T19:04:41.646970Z|runtime|3712472e-9693-402f-9093-3c5211f77a7f]           3       0.99      0.99      0.99       198
+[MFLOG|0|2024-04-26T19:04:41.647002Z|runtime|53a32baa-ed72-4d39-a83f-1fcccf5065da]
+[MFLOG|0|2024-04-26T19:04:41.647036Z|runtime|d43df21e-4f43-4ac4-9cf1-000ce4f6c48f]    accuracy                           0.99       760
+[MFLOG|0|2024-04-26T19:04:41.647063Z|runtime|21f7ce78-c410-4db6-8c99-6fbec9bc5eb2]   macro avg       0.99      0.99      0.99       760
+[MFLOG|0|2024-04-26T19:04:41.647099Z|runtime|18c45df2-d464-4932-a51c-dee75bdcb482]weighted avg       0.99      0.99      0.99       760
+[MFLOG|0|2024-04-26T19:04:41.647132Z|runtime|36a82f25-145f-4bfe-a735-b958e0912233]

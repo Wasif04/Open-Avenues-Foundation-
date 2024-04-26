@@ -10,11 +10,11 @@ This project aims to enhance the processing of radiology reports by utilizing ad
 - To employ Metaflow for managing data flows and building reproducible machine learning pipelines.
 
 # Technologies Used:
-Python: For all programming requirements.
-Pandas and Plotly: For data manipulation and visualization.
-Scikit-learn: For implementing machine learning models and preprocessing techniques.
-Gensim: For building and analyzing Word2Vec models.
-Metaflow: For building and managing machine learning workflows.
+- Python: For all programming requirements.
+- Pandas and Plotly: For data manipulation and visualization.
+- Scikit-learn: For implementing machine learning models and preprocessing techniques.
+- Gensim: For building and analyzing Word2Vec models.
+- Metaflow: For building and managing machine learning workflows.
 
 # Acknowledgments:
 Deeptanshu Jha

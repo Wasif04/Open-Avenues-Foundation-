@@ -16,5 +16,10 @@ This project aims to enhance the processing of radiology reports by utilizing ad
 - Gensim: For building and analyzing Word2Vec models.
 - Metaflow: For building and managing machine learning workflows.
 
+# How to Run
+Docker Command: 
+docker build -t metaflow-pipeline .
+docker run -v $(pwd)/output:/usr/src/app/output metaflow-pipeline
+
 # Acknowledgments:
 Deeptanshu Jha

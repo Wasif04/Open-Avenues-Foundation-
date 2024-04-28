@@ -21,8 +21,8 @@ This project aims to enhance the processing of radiology reports by utilizing ad
 
 # How to Run
 Docker Command: 
-- docker build -t metaflow-pipeline .
-- docker run -v $(pwd)/output:/usr/src/app/output metaflow-pipeline
+- docker build -t metaflow-app .
+- docker run metaflow-app
 
 # Acknowledgments:
 Deeptanshu Jha

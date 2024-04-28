@@ -1,0 +1,12 @@
+pip
+nltk
+matplotlib
+scipy==1.12.0
+pandas
+numpy
+wordcloud
+scikit-learn
+gensim
+metaflow
+joblib
+openpyxl
